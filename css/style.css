@@ -2,74 +2,74 @@
 
 *{
 margin: 0; /*margem*/
-padding: 0; /**/
-box-sizing: border-box;
-font-family: 'Oxanium', cursive;
+padding: 0; /*distância entre o conteúdo de um elemento e suas bordas*/
+box-sizing: border-box; /*define como a largura e a altura totais de um elemento*/
+font-family: 'Oxanium', cursive; /*fonte*/
 }
 
 body {
 text-align: center; /*movimentar o texto*/
 background: linear-gradient(to bottom, #6ab7f5, #fff); /*Cor da minha pagina*/
-min-height: 100vh;
+min-height: 100vh; /*define a altura mínima de um elemento*/
 }
 
 main {
- display: inline-block;
- margin-top: 2%;
- padding: 15px;
- position: relative;
+ display: inline-block; /*basicamente, a tela dos diversos dispositivos que contam com essa peça*/
+ margin-top: 2%; /* indica o espaço acima do elemento.*/
+ padding: 15px; /*distância entre o conteúdo de um elemento e suas bordas*/
+ position: relative; /*define como um elemento pode ser posicionado (renderizado) no documento (página)*/
 }
 
 .pokedex {
-    width: 100%;
-    max-width: 425px;
+    width: 100%; /*especifica a largura da área de conteúdo do elemento*/
+    max-width: 425px; /*define a largura máxima de um elemento . Isso evita que o valor usado da propriedade width se torne maior que o valor especificado por max-width*/
 }
 
 .pokemon__image {
-    position: absolute;
-    bottom: 55%;
-    left: 50%;
-    transform: translate(-63%, 20%);
-    height: 18%;
+    position: absolute; /*define como um elemento pode ser posicionado (renderizado) no documento (página)*/
+    bottom: 55%; /*Através do atributo bottom é possível definir a posição vertical do elemento em relação a sua borda inferior.*/
+    left: 50%; /*que define todas as propriedades da borderm, a esquerda de um elemento*/
+    transform: translate(-63%, 20%); /*permite girar, dimensionar, inclinar ou traduzir um elemento*/
+    height: 18%; /*especifica a altura de um elemento */
 }
 
 .pokemon__data{
-    position: absolute;
-    font-weight: 600;
-    color: #aaa ;
+    position: absolute; /*define como um elemento pode ser posicionado (renderizado) no documento (página)*/
+    font-weight: 600; /*fonte mais forte*/
+    color: #aaa ; /*cor*/
     top: 54.5%; /*posicionar o h1 etc...*/
-    right: 27%;
+    right: 27%; /*especificação da posição horizontal de um elemento posicionado*/
     font-size: clamp(8px, 5vw, 25px); /*valor recebe 3 parâmetro (min, desejavel,maximo)*/
 }
 
 .pokemon__name {
-    color: #3a444d ;
+    color: #3a444d ; /*cor*/
     text-transform: capitalize; /*deixar a primeira letra maiúscula*/
 }
 
 .form {
-    position: absolute;
-    width: 65%;
-    top: 65%;
-    left: 13.5%;
+    position: absolute; /*define como um elemento pode ser posicionado (renderizado) no documento (página)*/
+    width: 65%; /*especifica a largura da área de conteúdo do elemento*/
+    top: 65%; /*participa da especificação da posição vertical de um elemento posicionado*/
+    left: 13.5%; /*que define todas as propriedades da borderm, a esquerda de um elemento*/
 }
 
 .input__search {
     width: 100%; /*tamanho de forte e % ajuda para imagem nao perder a proporção*/
-    padding: 4%;
-    outline: none;
-    border: 2px solid #333;
-    border-radius: 5px;
-    font-weight: 600;
-    color: #3a444d;
-    font-size: clamp(8px, 5vw, 1rem);
+    padding: 4%; /*distância entre o conteúdo de um elemento e suas bordas*/
+    outline: none; /*uma propriedade abreviada para configurar uma ou mais das propriedades de contorno outline-styl*/
+    border: 2px solid #333; /*bordas aplicadas no estilo em cascatas*/
+    border-radius: 5px; /*arredonda os cantos da borda externa de um elemento*/
+    font-weight: 600; /*o “valor” colocado em sua fonte que determinará como seu texto aparecerá*/
+    color: #3a444d; 
+    font-size: clamp(8px, 5vw, 1rem); /*Definir tamanho da fonte, para não permitir que os usuários redimensionem o texto*/
     box-shadow: -3px 4px 0 #888, -5px 7px 0 #333; /*sombra e X, Y E TAMANHO DA SOMBRA (Com dois valores posso sobrepor uma sombra em cima da outra*/
 }
 
 .buttons {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
+    position: absolute; /*define como um elemento pode ser posicionado (renderizado) no documento (página)*/
+    bottom: 10%; /*Através do atributo bottom é possível definir a posição vertical do elemento em relação a sua borda inferior.*/
+    left: 50%; /*que define todas as propriedades da borderm, a esquerda de um elemento*/
     width: 65%;
     transform: translate(-57%, 0);
     display: flex;
